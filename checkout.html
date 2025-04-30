@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление доставки</title>
+    <link rel="stylesheet" href="delivery.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Магазин одежды</a></h1>
+            <nav class="navigation"><ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="form_reg.php">Регистрация</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Оформление доставки</h2>
+        <form action="submit_order.php" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Адрес доставки:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <button type="submit">Отправить заказ</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Магазин одежды</p>
+    </footer>
+</body>
+</html>

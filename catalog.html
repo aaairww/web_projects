@@ -1,0 +1,178 @@
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Каталог товаров</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="catalog.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+            <h1 class="logo"><a href="index.html">Каталог</a></h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <main>
+            <section class="catalog">
+                <h2>Наш каталог</h2>
+                <div class="filters">
+                    <h3>Фильтры:</h3>
+                    <label for="category">Категория:</label>
+                    <select id="category">
+                        <option value="all">Все</option>
+                        <option value="men">Мужская одежда</option>
+                        <option value="women">Женская одежда</option>
+                    </select>
+                    <label for="min-price">Минимальная цена:</label>
+                    <input type="number" id="min-price" placeholder="От">
+                    <label for="max-price">Максимальная цена:</label>
+                    <input type="number" id="max-price" placeholder="До">
+                    <button id="apply-filters">Применить</button>
+                </div>
+
+                <div class="catalog__products">
+                    <!-- Пример товаров -->
+                    <div class="product hidden" data-category="women" data-price="200">
+                        <img src="images/пуховик-1.jpg" alt="Товар 1">
+                        <h3>Пуховик</h3>
+                        <hr>
+                        <p>цена: 200$</p>
+                    </div>
+                    <div class="product hidden" data-category="men" data-price="200">
+                        <img src="images/двусторонняя_куртка.jpg" alt="Товар 2">
+                        <h3>Двусторонняя куртка</h3>
+                        <hr>
+                        <p>цена: 200$</p>
+                    </div>
+                    <div class="product hidden" data-category="men" data-price="185">
+                        <img src="images/rab_rurtka.webp" alt="Товар 3">
+                        <h3>Рабочая куртка</h3>
+                        <hr>
+                        <p>цена: 500$</p>
+                    </div>
+                    <div class="product hidden" data-category="women" data-price="225">
+                        <img src="images/beach_well.webp" alt="Товар 4">
+                        <h3>Свободная куртка</h3>
+                        <hr>
+                        <p>цена: 225$</p>
+                    </div>
+                    <div class="product hidden" data-category="women" data-price="350">
+                        <img src="images/carhartt_workwear_women.jpg" alt="Товар 5">
+                        <h3>Двусторонняя жилетка</h3>
+                        <hr>
+                        <p>цена: 350$</p>
+                    </div>
+                    <div class="product hidden" data-category="women" data-price="2000">
+                        <img src="images/landon_sunglasses.webp" alt="Товар 6">
+                        <h3>Cолнцезащитные очки LANDON</h3>
+                        <hr>
+                        <p>цена: 185$</p>
+                    </div>
+                    <div class="product hidden" data-category="men" data-price="130">
+                        <img src="images/hoodie_8ball.webp" alt="Товар 7">
+                        <h3>Толстовка</h3>
+                        <hr>
+                        <p>цена: 130$</p>
+                    </div>
+                    <div class="product hidden" data-category="men" data-price="120">
+                        <img src="images/swiyshot.webp" alt="Товар 8">
+                        <h3>Толстовка без капюшона</h3>
+                        <hr>
+                        <p>цена: 120$</p>
+                    </div>
+                    <div class="product hidden" data-category="women" data-price="60">
+                        <img src="images/jeans.jpg" alt="Товар 9">
+                        <h3>Джинсы Wide Leg</h3>
+                        <hr>
+                        <p>цена: 60$</p>
+                    </div>
+                    <div class="product hidden" data-category="women" data-price="65">
+                        <img src="images/jeans1975.jpg&w={width}" alt="Товар 10">
+                        <h3>Джинсы Z1975 WIDE LEG</h3>
+                        <hr>
+                        <p>цена: 65$</p>
+                    </div>
+                    <div class="product hidden" data-category="men" data-price="160">
+                        <img src="images/big OL jeans.webp" alt="Товар 11">
+                        <h3>Джинсы BIG OL</h3>
+                        <hr>
+                        <p>цена: 160$</p>
+                    </div>
+                    <div class="product hidden" data-category="men" data-price="120">
+                        <img src="images/classic jeans.webp" alt="Товар 12">
+                        <h3>Джинсы классические</h3>
+                        <hr>
+                        <p>цена: 120$</p>
+                    </div>
+                    <div class="product hidden" data-category="women" data-price="2,750">
+                        <img src="images/miu_miu bag.webp" alt="Товар 13">
+                        <h3>Сумка Wander</h3>
+                        <hr>
+                        <p>цена: 2,750$</p>
+                    </div>
+                    <div class="product hidden" data-category="women" data-price="595">
+                        <img src="images/balenciaga_key.avif" alt="Товар 14">
+                        <h3>Женский брелок Paloma разноцветный</h3>
+                        <hr>
+                        <p>цена: 595$</p>
+                    </div>
+                    <div class="product hidden" data-category="men" data-price="700">
+                        <img src="images/canyanon_adidas.jpg" alt="Товар 15">
+                        <h3>Кроссовки Neiborhood Watcher</h3>
+                        <hr>
+                        <p>цена: 700$</p>
+                    </div>
+                    <div class="product hidden" data-category="men" data-price="700">
+                        <img src="images/canyanon_slippers.jpeg" alt="Товар 16">
+                        <h3>Тапки Toes Slippers</h3>
+                        <hr>
+                        <p>цена: 700$</p>
+                    </div>
+                    <div class="product hidden" data-category="men" data-price="175">
+                        <img src="images/dior_savage.jpg" alt="Товар 17">
+                        <h3>Духи Dior Savage</h3>
+                        <hr>
+                        <p>цена: 175$</p>
+                    </div>
+                    <div class="product hidden" data-category="women" data-price="150">
+                        <img src="images/chanel.avif" alt="Товар 18">
+                        <h3>Духи Chanel Coco Mademoiselle </h3>
+                        <hr>
+                        <p>цена: 150$</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Магазин одежды</p>
+        </footer>
+        <script>
+            // Скрываем все товары изначально
+            document.querySelectorAll('.product').forEach(product => {
+                product.classList.add('hidden');
+            });
+        
+            // Функция для применения фильтра
+            function applyFilter(category) {
+                document.querySelectorAll('.product').forEach(product => {
+                    if (category === 'all' || product.id === category) {
+                        product.classList.remove('hidden'); // Показываем подходящие товары
+                    } else {
+                        product.classList.add('hidden'); // Скрываем остальные
+                    }
+                });
+            }
+        </script>
+    </body>
+    </html>

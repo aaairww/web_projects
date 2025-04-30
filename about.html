@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        
+
+        
+        /* Главный контент */
+        .about {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .about h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .about p {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-content img {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .text-block h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .text-block ul li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .text-block ul li b {
+            color: black;
+        }
+
+        .map-image {
+            width: 100%;
+            margin-top: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+       
+        .cta-button {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.5rem;
+            background-color: darkcyan;
+            color: #fff;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color:  #0056b3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">О нас</a></h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section class="about container">
+            <h2>О нас</h2>
+            <p>
+                Добро пожаловать в наш магазин стильной одежды! Мы создаем пространство, 
+                где качество, стиль и удобство соединяются воедино.
+            </p>
+            <div class="about-content">
+                <img src="images/4.jpg" alt="Фото о магазине">
+                <div class="text-block">
+                    <h3>Почему выбирают нас?</h3>
+                    <ul>
+                        <li><b>Качество и стиль:</b> Только тщательно отобранные коллекции.</li>
+                        <li><b>Доступные цены:</b> Лучшее соотношение цены и качества.</li>
+                        <li><b>Широкий ассортимент:</b> Для любого случая и стиля.</li>
+                        <li><b>Индивидуальный подход:</b> Поможем подобрать идеальный образ.</li>
+                        <li><b>Удобный шопинг:</b> Быстрая доставка и возврат.</li>
+                    </ul>
+                    <a href="catalog.html" class="cta-button">Перейти в каталог</a>
+                </div>
+            </div>
+<h3>Как к нам добраться?</h3>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad5e2820b088c11564bd2dedde2bb73f63ce080f8d3c459b77644c4b38b2eb572&amp;width=829&amp;height=465&amp;lang=ru_RU&amp;scroll=true;align=middle"></script>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Магазин одежды. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

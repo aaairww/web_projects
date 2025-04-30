@@ -1,0 +1,323 @@
+/* Общий стиль для всех страниц */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1.logo a, header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+.navigation a:hover {
+    color: #00b7ff;
+}
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+.navigation a {
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+/* Основной контент */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 15px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p{
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Секции */
+.index__hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.index__hero .button {
+    background: darkcyan;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.index__hero .button:hover {
+    background: #0056b3;
+}
+
+.index__featured, .catalog, .contact, .about {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.index__wrapper, .catalog__products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.product {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 2rem);
+    max-width: calc(33% - 2rem);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.product hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0.5rem 0;
+}
+
+.product p {
+    font-size: 0.9rem;
+}
+
+.product button {
+    background: darkcyan;
+    color: #fff;
+    border: none;
+    padding: 10px;  
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product button:hover {
+    background: #0056b3;
+}
+
+/* Фильтры */
+.filters {
+    margin-bottom: 2rem;
+}
+
+.filters label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.filters input, .filters select, .filters button {
+    margin-bottom: 1rem;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Корзина */
+.index__cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.index__cart ul li {
+    background: #fff;
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index__cart ul li button {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.index__cart ul li button:hover {
+    background: #b02a37;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.contact {
+        background-color: #fff;
+        padding: 2rem;
+        margin: 2rem auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+       .contact a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+       .contact a:hover {
+            color: darkcyan; 
+        }
+
+        .contact form {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact label {
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .contact input:focus,
+        .contact textarea:focus {
+            outline: none;
+            border-color:black;
+        }
+
+        .contact button {
+            padding: 0.8rem 1.5rem;
+            background-color: darkcyan;
+            color: #fff;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        
+
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+  

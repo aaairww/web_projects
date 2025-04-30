@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Контакты</a></h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section class="contact">
+            <h2>Свяжитесь с нами</h2>
+            <p>Адрес: г. Минск, ул. Немига д. 3</p>
+            <p>Телефон: <a href="tel:+375259175684">+375 25 777-77-77</a></p>
+            <p>Email: <a href="mailto:lu4shiyShopEver@mail.ru">lu4shiyShopEver@mail.ru</a></p>
+            
+            <form action="mailto:a.taraskin207@mail.ru" method="post" enctype="text/plain">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Напишите ваше сообщение" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2023 Магазин одежды. Все права защищены.</p>
+    </footer>
+</body>
+</html>
